@@ -31,7 +31,7 @@ public class demodatatype {
         // int value -> double value
         // assign double value to double variable
         double w2 = 10;
-        System.out.print(w2);// 10.0
+        System.out.println(w2);// 10.0
 
         // Naming convention: camel case
         int englishScore = 70;
@@ -63,7 +63,7 @@ public class demodatatype {
         e = e + 1;
         System.out.println("e=" + e);
         e += 1;
-        System.out.print("e=" + e);
+        System.out.println("e=" + e);
         e -= 1;
         System.out.println("e=" + e);
         e *= 2;
