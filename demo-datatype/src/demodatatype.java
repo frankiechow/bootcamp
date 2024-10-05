@@ -15,7 +15,7 @@ public class demodatatype {
         //Math Operation: +, -, *, /
         int result = a - y * x;
         System.out.println(result);// Run
-        //Math Operation: %
+        //Math Operation: % (餘數)
         int reaminder = 10 % 3;
         System.out.println(reaminder);// 1
 
@@ -52,10 +52,10 @@ public class demodatatype {
         a = -40;
         // code block: main(String[] args) {}
         // ! int x = 9; // we cannot reuse the same variable name within a code block
-        int x2 = 9;
+        // int x2 = 9;
 
         // how to backup a value
-        int backup = x;
+        // int backup = x;
         x = 25;
         
         // Operatiors: +=, -=, *=, /=
