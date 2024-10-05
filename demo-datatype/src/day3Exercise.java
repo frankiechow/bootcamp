@@ -38,7 +38,7 @@ public class day3Exercise {
     int asn1 = reminder1 / reminder2;
     int asn2 = reminder1 % reminder2;
     System.out.println("variable reminder =" + asn2);
-    System.out.println("variable resuld =" + asn1);
+    System.out.println("variable result =" + asn1);
     //grok2:
     int firstNum = 31;
         int secondNum = 42;
@@ -94,6 +94,14 @@ public class day3Exercise {
         
         System.out.println(year1 + ": " + result1);
     }
+    //
+    
+    int card = 52;
+    int joint = 17;
+    boolean higher = (card * (1/3) > joint);
+    String result01 = higher ? "win" : "lose";
+    System.out.println("hand = " + result01);
+
 }
 
 }
