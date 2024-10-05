@@ -55,7 +55,7 @@ public class demodatatype {
         // int x2 = 9;
 
         // how to backup a value
-        // int backup = x;
+        int backup = x;
         x = 25;
         
         // Operatiors: +=, -=, *=, /=

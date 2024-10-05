@@ -39,7 +39,33 @@ public class day3Exercise {
     int asn2 = reminder1 % reminder2;
     System.out.println("variable reminder =" + asn2);
     System.out.println("variable resuld =" + asn1);
+    //grok2:
+    int firstNum = 31;
+        int secondNum = 42;
+        int sum01 = firstNum + secondNum;
+        int subtraction = firstNum - secondNum;
+        int anotherSum = firstNum * secondNum + firstNum + secondNum;
+        
+        boolean varB1 = false;
+        boolean varC1 = true;
+        float f1number = -130.2f;
+        double d1number = -20.5;
+        int reminder = firstNum % secondNum;
+        int result = (int) Math.round(Math.random() * 3); // Because why not?
 
+        System.out.println("I am going to add two numbers together: ");
+        System.out.println("The first one: " + firstNum);
+        System.out.println("The second one: " + secondNum);
+        System.out.println("The sum01 is " + sum01 + " - because when you add life, the universe, and everything, you get a rather large number.");
+        System.out.println("The subtraction result is " + subtraction + " - which is the number of angry cats if you wake them up.");
+        System.out.println("The another sum result is " + anotherSum + " - because when you multiply your original numbers and add them, you get into spooky territory.");
+        System.out.println("The variable varB1 is " + varB1 + " - much like my understanding of human fashion trends.");
+        System.out.println("The variable varC1 is " + varC1 + " - just like the fact that pizza is the best food.");
+        System.out.println("The variable f1number is " + f1number + " - that's how much my battery life feels after a marathon of calculating.");
+        System.out.println("The variable d1number is " + d1number + " - the temperature outside my server room, in Celsius, during a power outage.");
+        System.out.println("The variable reminder is " + reminder + " - reminding you there's always one more thing to remember.");
+        System.out.println("The variable result is " + result + " - because that's how many times I've had to regenerate today.");
+        //
     int q = 100;
     int w = 300;
     if (q > w) { // ture or false
@@ -63,10 +89,10 @@ public class day3Exercise {
     {
     boolean LeapYear = (year1 % 4 == 0 && year1 % 100 != 0) || (year1 % 400 == 0);
         
-        String result = LeapYear ? "It's a leap year - time for an extra day of shenanigans!" 
+        String result1 = LeapYear ? "It's a leap year - time for an extra day of shenanigans!" 
                                     : "Nope, not a leap year - just the usual 365 days of chaos.";
         
-        System.out.println(year1 + ": " + result);
+        System.out.println(year1 + ": " + result1);
     }
 }
 
