@@ -57,10 +57,11 @@ public class demodatatype {
         // how to backup a value
         int backup = x;
         x = 25;
+        System.out.println("backup = " + backup);
         
         // Operatiors: +=, -=, *=, /=
         int e = 9;
-        e = e + 1;
+        e = e + 1; // +1 myself
         System.out.println("e=" + e);
         e += 1;
         System.out.println("e=" + e);
@@ -77,6 +78,17 @@ public class demodatatype {
         // --
         e--; // decrement by 1
         System.out.println("e=" + e);
+        // declaration
+        int u;
+        // int default value is 0, but it is not for variable
+
+        // Literal notation
+        long l6 = 10L;
+        float f5 = 10.3f;
+        double d6 = 10.3d;
+        int i5 = 10;
+        System.out.println(l6 + f5 + d6 + i5);
+
 
     }
 }

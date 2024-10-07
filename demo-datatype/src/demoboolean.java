@@ -1,7 +1,16 @@
-public class day3 {
+public class demoboolean {
     public static void main(String[] args) {
-        boolean b1 = true;
-        boolean b2 = false;
+        boolean a = true;
+        boolean b = false;
+        a = false;
+        b = true;
+        System.out.println(a);
+        System.out.println(b);
+
+        int johnAge = 6;
+         boolean isAdult = johnAge >= 18;
+         System.out.println("john age is " + isAdult);
+
 
         // > , < , >= , <=
         boolean r1 = 10 > 3;
