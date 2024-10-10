@@ -30,11 +30,29 @@ public class demoOperator {
             System.out.println("Not Adult");
         }
         char gender = 'M';
-        if (!(age >= 18 && gender == 'M')) {
+        if (!(age >= 18 && gender == 'M')) { 
             System.out.println("Not Male Adult");
         } else {
             System.out.println("Male Adult");
         }
+
+        // Condition
+    char grade = 'C';
+
+    switch (grade) {
+      case 'A':
+        System.out.println("grade is A ");
+        break;
+      case 'B':
+        System.out.println("grade is B ");
+        break;
+      case 'C':
+        System.out.println("grade is C ");
+        break;
+      default:
+        System.out.println("grade is D ");
+        break;
+    }
 
     }
 }

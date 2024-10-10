@@ -4,6 +4,11 @@ public class demoChar {
         String s2 = "h";
         // data type: char, which stores single charactor ONLY.
         // char range 0 -> 65535
+
+         //ASCII
+         System.out.println((char)48);
+         System.out.println((char)65);
+         
         char c = 'h';
         // char c2 = "h";
         System.out.println(c); // h

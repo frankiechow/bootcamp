@@ -51,7 +51,7 @@ public class demoString { // class name = file name
         k = 1;
         //System.out.println("after : " - k);
         System.out.println("k++ : " + k++); //post-increment
-        System.out.println("++k : + ++k");// pre-increment
+        System.out.println("++k : "+ ++k);// pre-increment
 
         int i = 5;
         int a;// default = 0
