@@ -80,11 +80,11 @@ public class day3Exercise {
      * If a year is divisible by 4 and not divisible by 100 or divisible by 400,
      * then, it is a leap year.
      */
-    int year1 = 2009; //2020 , 2400
+    int year1 = 2008; //2020 , 2400
     if(year1 % 4 == 0 && (year1 % 100 != 0 || year1 % 400 == 0)) {
-        System.out.println("year1 is leap year");
+        System.out.println("It is a leap year");
     } else {
-        System.out.println("year1 is not leap year");}
+        System.out.println("It is not a leap year");}
         //Grok2 answer:
     {
     boolean LeapYear = (year1 % 4 == 0 && year1 % 100 != 0) || (year1 % 400 == 0);
@@ -95,12 +95,6 @@ public class day3Exercise {
         System.out.println(year1 + ": " + result1);
     }
     //
-    
-    int card = 52;
-    int joint = 17;
-    boolean higher = (card * (1/3) > joint);
-    String result01 = higher ? "win" : "lose";
-    System.out.println("hand = " + result01);
 
 }
 
