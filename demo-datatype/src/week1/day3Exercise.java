@@ -1,3 +1,4 @@
+package week1;
 public class day3Exercise {
     public static void main(String[] args) {
         /**

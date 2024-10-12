@@ -69,7 +69,7 @@ public class BlackJack {
 
         // 玩家輪
         while (true) {
-            System.out.print("你要要牌嗎? (y/n): ");
+            System.out.print("你要牌嗎? (y/n): ");
             if (!scanner.next().equalsIgnoreCase("y")) break;
             playerHand.add(deck.dealCard());
             System.out.println("你的手牌: " + playerHand);

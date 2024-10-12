@@ -78,12 +78,12 @@ public class demoString2 {
 
         //substring(int beginIndex, int endIndex)
         String s5 = "Diamond Hill";
-        System.out.println("case 1 : " + s5.substring(5)); // output:nd Hill
-        System.out.println("case 2 : " + s5.substring(3, 10)); // output: mond Hi
+        System.out.println("case 5 : " + s5.substring(5)); // output:nd Hill
+        System.out.println("case 6 : " + s5.substring(3, 10)); // output: mond Hi
         //chain method
-        System.out.println("case 3 : " + s5.substring(3, 10).equals("mond"));
-        System.out.println("case 4 : " + s5.substring(3, 10).equals("mond Hi"));
-        System.out.println("case 5 " + s5.charAt(3) == "C");// s5.charAt(3)='m'
+        System.out.println("case 7 : " + s5.substring(3, 10).equals("mond"));
+        System.out.println("case 8 : " + s5.substring(3, 10).equals("mond Hi"));
+        System.out.println("case 9 " + s5.charAt(3) == "C");// s5.charAt(3)='m'
 
         String s6 = "";
         String s7 = " ";

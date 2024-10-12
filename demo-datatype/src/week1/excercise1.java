@@ -1,3 +1,4 @@
+package week1;
 import java.util.Scanner;
 
 public class excercise1 {
@@ -81,6 +82,10 @@ public class excercise1 {
         MonthOfName = "December";
         number_Of_DaysInMonth = 31;
         break;
+        default:
+        MonthOfName = "Invalid";
+        System.out.println("Month number must be 1 - 12.");
+        return;
       }
         // The February has 29 days: (Every 4 years and the year cannot divded by 100)
         // or The year can divided by 400
