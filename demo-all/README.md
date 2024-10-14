@@ -8,4 +8,5 @@
 - Math Symbol: ()
 
 - Summary
- - Primitives: byte, short, int, long, float, double, char, 
+ - Primitives: byte, short, int, long, float, double, char, boolean
+ - String

@@ -7,10 +7,13 @@ public class demoString2 {
         String str4 = "嗨";
         String str5 = "  ";
 
+        // equals()
+        // length()
         str1.equals(str2);
         System.out.println("str1.length() : " + str1.length());
         System.out.println("str5.length() : " + str5.length());
 
+        // charAt()
         str3.charAt(0);
         System.out.println("str3.charAt(0)" + str3.charAt(0));
 
@@ -18,10 +21,12 @@ public class demoString2 {
 
         System.out.println(str3.charAt(str3Length - 1));
         System.out.println(str3.charAt(str3.length() - 1));
+
+        // trim去除多餘space
        
         String str6 = "   Bootcamp   ";
         System.out.println("before : " + str6);
-        System.out.println("after : " + str6.trim()); // trim去除多餘space
+        System.out.println("after : " + str6.trim());
 
         String str7 = "   Bootcamp   xdxd";
         System.out.println("before : " + str7);
@@ -30,16 +35,23 @@ public class demoString2 {
         String str8 = "   Diamond Hill   ";
         System.out.println(str8.replace('D' , 'd').trim());
 
+        // toLowerCase & toUpperCase
+
         String str9 = "ABCDEFG";
         System.out.println("str9.toLowerCase : " + str9.toLowerCase());
         String str10 = "AbCdEfG";
         System.out.println("str10.toUpperCase : " + str10.toUpperCase());
 
-        String str11 = "happy";
-        String str12 = "birthday";
-        System.out.println(str11 + str12);
-        //concat()
-        System.out.println(str12);
+        // Chain Method
+        System.out.println("Peter length 4: " + ("Peter".toUpperCase().length() > 4)); // true
+        System.out.println("equals Upper case: " + ("Peter".toUpperCase().equals("PETER"))); // ture
+        System.out.println("== Upper case: " + ("Peter".toUpperCase() == "PETER")); // false
+
+        // concat()
+        String str11 = "Happy";
+        String str12 = "Birthday";
+        
+        System.out.println("concat : " + str11.concat(str12));
 
         //Exercise
         //Expect Result:

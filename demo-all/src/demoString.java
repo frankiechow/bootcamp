@@ -19,7 +19,7 @@ public class demoString { // class name = file name
         System.out.println("x3 = " + x3);
 
         // ! equals()
-        // boolean result = x.equals("hello"); newbie style
+        // boolean result = x.equals("hello"); newbie style not good
         boolean result = "hello".equals(x);
         System.out.println(result); //true
         // boolean result2 = x.equals("hello!");

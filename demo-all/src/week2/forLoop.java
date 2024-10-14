@@ -99,6 +99,6 @@ public class forLoop {
         //if(condition is ture) { //括號後面冇;}
 
         //Optional
-        //Loop
+        //for Loop
     }
 }
