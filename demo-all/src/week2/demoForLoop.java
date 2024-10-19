@@ -181,9 +181,45 @@ public class demoForLoop {
         for(int j = 0; j < 2; j++){
             System.out.println("*" + i + j); 
         }
-    
     }
-    
+
+    int rows = 5;
+
+        for(int i = rows; i >= 1; --i) { // Outer loop for rows
+            for(int j = 1; j <= i; ++j) { // Inner loop for stars
+                System.out.print("*");
+            }
+            System.out.println(); // Move to the next line after each row
+        }
+
+        //diamond pattern
+        int n = 3; // Number of rows in the upper half of the diamond
+
+        // Upper part of the diamond
+        for (int i = 1; i <= n; i++) {
+            // Print leading spaces
+            for (int j = n; j > i; j--) {
+                System.out.print(" ");
+            }
+            // Print stars
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println(); // New line
+        }
+
+        // Lower part of the diamond
+        for (int i = n - 1; i >= 1; i--) {
+            // Print leading spaces
+            for (int j = n; j > i; j--) {
+                System.out.print(" ");
+            }
+            // Print stars
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println(); // New line
+        }
 
         // Must primitive
         //String method : length(), substring(), charAt(), equals(), indexOf()
