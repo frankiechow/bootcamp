@@ -183,6 +183,7 @@ public class demoForLoop {
         }
     }
 
+    System.out.println("Print star *");
     int rows = 5;
 
         for(int i = rows; i >= 1; --i) { // Outer loop for rows
@@ -193,7 +194,7 @@ public class demoForLoop {
         }
 
         //diamond pattern
-        int n = 3; // Number of rows in the upper half of the diamond
+        int n = 2; // Number of rows in the upper half of the diamond
 
         // Upper part of the diamond
         for (int i = 1; i <= n; i++) {
