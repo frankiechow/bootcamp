@@ -1,3 +1,4 @@
+package week1;
 public class demoString { // class name = file name
     public static void main(String[] args) {
         // Integer decimal place

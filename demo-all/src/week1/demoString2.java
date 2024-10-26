@@ -1,3 +1,4 @@
+package week1;
 public class demoString2 {
     public static void main(String[] args) {
         

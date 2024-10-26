@@ -1,3 +1,4 @@
+package week2;
 import java.util.Scanner;
 //import case 1 , Quick fix
 // import 2 , ctrl + shift + o -> auto import

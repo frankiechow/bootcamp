@@ -1,3 +1,4 @@
+package week1;
 public class demodouble {
     public static void main(String[] args) {
         //float, double

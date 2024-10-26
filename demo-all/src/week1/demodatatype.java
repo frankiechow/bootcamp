@@ -1,3 +1,4 @@
+package week1;
 public class demodatatype {
     public static void main(String[] args) {
         // hihihi嗨嗨嗨.

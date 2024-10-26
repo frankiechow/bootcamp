@@ -1,3 +1,4 @@
+package week2;
 public class demoOperator {
     public static void main(String[] args) {
         // "!=" -> not equals to

@@ -1,3 +1,4 @@
+package week1;
 public class demoInteger {
     public static void main(String[] args) {
         //byte , short, int, long
