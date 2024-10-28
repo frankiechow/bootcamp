@@ -104,9 +104,18 @@ public class demoArray {
                     arr3[index++] = num;
     }
 }
-            System.out.println(Arrays.toString(arr3));
+            System.out.println("arr3 = " + Arrays.toString(arr3));
 
             // move the max value to the tail
-            
+            long[] arr4 = new long[] {10, 99, -4, -100};
+            long backup2;
+            for(int i = 0; i < arr4.length - 1; i++){
+                if (arr4[i] > arr4[i + 1]){
+                    backup2 = arr4[i];
+                    arr4[i] = arr4[i + 1];
+                    arr4[i + 1] = backup2;
+                }
+            }
+            System.out.println("arr4 = " + Arrays.toString(arr4)); // [10, -4, -100, 99]
     }
 }
