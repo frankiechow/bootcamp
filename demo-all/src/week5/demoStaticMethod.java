@@ -29,7 +29,7 @@ public class demoStaticMethod {
     }
 
     public static double circleArea(double radius){
-        return Math.pow(radius, 2.0) * Math.PI;
+        return Math.pow(radius, 2.0) * Math.PI; // square -> 2.0
     }
 
     public static int rectangleArea(int length, int width){
@@ -56,5 +56,9 @@ public class demoStaticMethod {
         System.out.println("hello");
         return sayHello2();
     }
+    public static char lastChar(String s){
+        return s.charAt(s.length() - 1);
+    }
+    // public static substring 
     
 }
