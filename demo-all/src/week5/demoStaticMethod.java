@@ -1,6 +1,7 @@
 package week5;
 
 public class demoStaticMethod {
+    
     public static void main(String[] args) {
         int result = sum(3, 2);
         System.out.println(result); //5
