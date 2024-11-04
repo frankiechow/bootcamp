@@ -1,24 +1,26 @@
 package week5;
 
 public class Order {
-    private Product product;
+    private Item item;
     private int quantity;
-
-    public void setProduct(Product product){
-        this.product = product;
+    public void setProduct(Item product) {
+      this.item = product;
     }
-    public void setQuantity(int quantity){
-        this.quantity = quantity;
+    public void setQuantity(int quantity) {
+      this.quantity = quantity;
     }
-    public Product getProduct(){
-        return this.product;
+    public Item getProduct() {
+      return this.item ;
     }
-    public int getQuantity(){
-        return this.quantity;
+    public int getQuantity(int quantity) {
+     return  this.quantity ;
     }
-    public String toString(){
-        return "[Product: " + this.product + //
-        " , quantity: " + this.quantity;
+    public double getOrderTotal(){
+      return this.quantity * this.item.getPrice();
     }
-
-}
+    
+    public String toString() {
+      return "[Product : " + this.item + //
+          " , quantity : " + this.quantity + "]";
+    }
+  }
