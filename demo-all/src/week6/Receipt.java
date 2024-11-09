@@ -1,4 +1,4 @@
-package week5;
+package week6;
 
 import java.util.Arrays;
 public class Receipt {
