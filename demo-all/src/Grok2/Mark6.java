@@ -1,4 +1,4 @@
-package week6;
+package Grok2;
 
 import java.util.Arrays;
 import java.util.Random;
