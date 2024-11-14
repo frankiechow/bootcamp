@@ -1,5 +1,7 @@
 package week5;
 
+import week6.Dog;
+
 public class Cat {
   private String name; // Attribute
   private int age; // Attribute
