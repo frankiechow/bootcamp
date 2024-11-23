@@ -1,4 +1,4 @@
-package week8;
+package week8.Shop;
 
 public abstract class Category extends Product {
     private String category;

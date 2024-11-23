@@ -1,4 +1,4 @@
-package week8;
+package week8.Shop;
 
 public class Electronics extends Item {
 
@@ -8,13 +8,11 @@ public class Electronics extends Item {
     //
     // }
   
-    public Electronics(String name, double price, String category,
-        String subCategory, int warrantyPeriod) {
-      super(name, price, category, subCategory);
+    public Electronics(String name, double price, String category, int warrantyPeriod) {
+      super(name, price, category, category);
       // 用parent class既 constructor
       this.warrantyPeriod = warrantyPeriod;
     }
-  
     public int getWarrantyPeriod() {
       return this.warrantyPeriod;
     }

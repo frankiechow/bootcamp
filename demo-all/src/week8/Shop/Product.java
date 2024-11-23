@@ -1,4 +1,4 @@
-package week8;
+package week8.Shop;
 
 // Big Parent class 
 public abstract class Product { // Product 是抽象的名詞 ，所以用abstract class形容-> 無得new Porduct()

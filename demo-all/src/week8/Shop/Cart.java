@@ -1,4 +1,4 @@
-package week8;
+package week8.Shop;
 
 import java.util.Arrays;
 

@@ -1,7 +1,7 @@
-package week8;
+package week8.Shop;
 
 public abstract class Item extends Category {
-    private String subCategory;
+    protected String subCategory;
   
     public Item(String name, double price, String category, String subCategory) {
       super(subCategory, 0, subCategory);
