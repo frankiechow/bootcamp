@@ -5,7 +5,7 @@ public class demoString2 {
         String str1 = "";
         String str2 = "frankie";
         String str3 = "frankie@gmail.com";
-        String str4 = "嗨";
+        // String str4 = "嗨";
         String str5 = "  ";
 
         // equals()

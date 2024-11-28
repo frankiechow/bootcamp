@@ -15,7 +15,16 @@ public class Deck {
     public int size(){
         return this.cards.length;
     }
-
+    public void shuffle(){
+        int half = this.cards.length / 2; // 52/2 =26
+        Card[] newCards = new Card[this.cards.length];
+        int idx = 0;
+        for(int i = 0; i < this.cards.length / 2; i++){
+            newCards[idx++] = this.cards[i]; // 0..1...25
+            newCards[idx++] = this.cards[i + half]; // 26..27...51
+        }
+        this.cards = newCards;
+    }
     
     @Override
     public String toString(){
@@ -33,5 +42,7 @@ public class Deck {
        Deck deck = new Deck();
        System.out.println(deck);
        System.out.println(deck.size());
+       Card card = new Card('2', 'S');
+       System.out.println(card);
     }
 }
