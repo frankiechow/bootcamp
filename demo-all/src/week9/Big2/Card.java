@@ -1,43 +1,26 @@
 package week9.Big2;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
-public class Card {
-    private char rank;
+
+// ! For custom class, always override toString(), equals(), hashCode()
+class Card implements Comparable<Card> {
+    private int rank;
     private char suit;
 
-    public static final char[] SUITS = {'H', 'D', 'C', 'S'};
-    public static final char[] RANKS = {'2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'};
-
-    public Card(char rank, char suit){
+    public Card(int rank, char suit) {
         this.rank = rank;
         this.suit = suit;
     }
-    public char getRank(){
-        return this.rank;
-    }
-    public char getSuit(){
-        return this.suit;
-    }
+
+    public int getRank() { return rank; }
+    public char getSuit() { return suit; }
 
     @Override
-    public boolean equals(Object obj){
-        if(this == obj)
-        return true;
-        if(!(obj instanceof Card))
-        return false;
-        Card card = (Card) obj;
-        return Objects.equals(card.getRank(), this.rank) //
-        && Objects.equals(card.getSuit(), this.suit);
+    public int compareTo(Card other) {
+        int rankComp = Integer.compare(this.rank, other.rank);
+        return rankComp != 0 ? rankComp : Character.compare(this.suit, other.suit);
     }
 
-    @Override
-    public int hashCode(){
-        return Objects.hash(this.rank, this.suit);
-    }
-
-    @Override
-    public String toString(){
-        return " [Card-" //
-        + "rank: " + this.rank + " "//
-        + "suit: " + this.suit + "]";
-    }
+    public static final char[] SUITS = {'S', 'H', 'C', 'D'}; // Spade, Heart, Club, Diamond
 }

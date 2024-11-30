@@ -1,48 +1,31 @@
 package week9.Big2;
-public class Deck {
-    private Card[] cards;
 
-    public Deck(){
-        this.cards = new Card[52];
-        int idx = 0;
-        for(char suit : Card.SUITS){
-            for(char rank : Card.RANKS){
-                this.cards[idx] = new Card(rank, suit);
-                idx++;
-            }
-        }
-    }
-    public int size(){
-        return this.cards.length;
-    }
-    public void shuffle(){
-        int half = this.cards.length / 2; // 52/2 =26
-        Card[] newCards = new Card[this.cards.length];
-        int idx = 0;
-        for(int i = 0; i < this.cards.length / 2; i++){
-            newCards[idx++] = this.cards[i]; // 0..1...25
-            newCards[idx++] = this.cards[i + half]; // 26..27...51
-        }
-        this.cards = newCards;
-    }
+// import java.util.ArrayList;
+// import java.util.Collections;
+// import java.util.List;
+
+// public class Deck {
+//         private List<Card> cards;
     
-    @Override
-    public String toString(){
-        String value = "Deck";
-        for(Card card : this.cards){
-            value += card.toString();
-        }
-        value = value.substring(0, value.length() - 1); // return new string object
-        return value;
-    }
-
+//         public Deck() {
+//             cards = new ArrayList<>();
+//             for (Card.Suit s : Card.Suit.values()) {
+//                 for (int rank = 3; rank <= 15; rank++) { // Big2 uses 3-2 in order, A=14, J=11, Q=12, K=13, 2=15
+//                     cards.add(new Card(s, rank));
+//                 }
+//             }
+//         }
     
-
-    public static void main(String[] args) {
-       Deck deck = new Deck();
-       System.out.println(deck);
-       System.out.println(deck.size());
-       Card card = new Card('2', 'S');
-       System.out.println(card);
-    }
-}
+//         public void shuffle() {
+//             Collections.shuffle(cards);
+//         }
+    
+//         public List<Card> dealCards(int numCards) {
+//             List<Card> dealt = new ArrayList<>();
+//             for (int i = 0; i < numCards && !cards.isEmpty(); i++) {
+//                 dealt.add(cards.remove(0));
+//             }
+//             return dealt;
+        
+//     }
+// }
