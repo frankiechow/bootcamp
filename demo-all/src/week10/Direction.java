@@ -1,34 +1,32 @@
 package week10;
 
 public enum Direction {
-
-    EAST, //
-    SOUTH, //
-    WEST, //
-    NORTH, //
+    EAST(1), //
+    SOUTH(2), //
+    WEST(-1), //
+    NORTH(-2), //
     ;
-
-    public void opposite(Direction dir) {
-        if(this == dir) {
-        } else {
-            switch(this) {
-                case EAST:
-                    if(dir == WEST) System.out.println("its opposite way");
-                    break;
-                case SOUTH:
-                    if(dir == NORTH) System.out.println("its opposite way");
-                    break;
-                case WEST:
-                    if(dir == EAST) System.out.println("its opposite way");
-                    break;
-                case NORTH:
-                    if(dir == SOUTH) System.out.println("its opposite way");
-                    break;
-            }
-        }
+  
+    // attribute
+    private int value;
+  
+    private Direction(int value) {
+      this.value = value;
     }
-
+  
+    public int getValue() {
+      return this.value;
+    }
+  
+    // instance method
+    public boolean oppsite(Direction direction) {
+      return this.value * -1 == direction.getValue();
+    }
+  
     public static void main(String[] args) {
-        Direction.NORTH.opposite(Direction.SOUTH);
+      System.out.println(Direction.WEST.oppsite(Direction.EAST)); // true
+      System.out.println(Direction.WEST.oppsite(Direction.NORTH)); // false
+      System.out.println(Direction.NORTH.oppsite(Direction.NORTH)); // false
+      System.out.println(Direction.NORTH.oppsite(Direction.SOUTH)); // true
     }
-}
+  }
