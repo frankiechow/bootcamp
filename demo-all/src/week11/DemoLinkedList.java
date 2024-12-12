@@ -26,6 +26,11 @@ public class DemoLinkedList {
     System.out.println(strings2); // [def, ijk]
     strings2.removeLast();
     System.out.println(strings2); // [def]
-    // 
+   // contains, containsAll, isEmpty
   }
+
+  public static void removeByIndex(List<String> strings, int index) {
+    
+  }
+
 }
