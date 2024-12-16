@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Ball implements Comparable<Ball>{
-    private Color color;
+  private Color color;
   private double size;
 
   public Ball(Color color, double size) {
@@ -54,6 +54,15 @@ public class Ball implements Comparable<Ball>{
     balls.add(new Ball(Color.RED, 10.0));
     Collections.sort(balls);
     System.out.println(balls); // [Ball[color=BLUE], Ball[color=RED], Ball[color=RED], Ball[color=WHITE]]
+
+    // Comparator
+    Collections.sort(balls, new OrderByColor());
+    System.out.println(balls);
+
+    // Comparator
+    Collections.sort(balls, new OrderBySize());
+    System.out.println(balls);
+    
   }
 
 }

@@ -17,5 +17,16 @@ public class DemoPriorityQueue {
         System.out.println(pq.poll()); // 67
         System.out.println(pq); // 87, 100
 
+        // RED -> WHITE -> BLUE
+        Queue<Ball> bq = new PriorityQueue<>(new OrderByColor());
+        bq.add(new Ball(Color.BLUE, 3.2));
+        bq.add(new Ball(Color.RED, 7.6));
+        bq.add(new Ball(Color.WHITE, 3.9));
+        bq.add(new Ball(Color.RED, 1.2));
+        System.out.println(bq.poll());
+        System.out.println(bq.poll());
+        System.out.println(bq.poll());
+        System.out.println(bq.poll());
+
     }
 }
