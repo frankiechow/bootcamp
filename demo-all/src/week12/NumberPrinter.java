@@ -3,15 +3,20 @@ package week12;
 public class NumberPrinter<T extends Number> {
     private T value;
 
-    public NumberPrinter(T value){
-        this.value = value;
-    }
-    public void setValue(T value){
-        this.value = value;
-    }
+  public NumberPrinter() {
 
-    public static void main(String[] args) {
-        NumberPrinter<Long> longPrinter = new NumberPrinter<>();
+  }
 
-    }
+  public NumberPrinter(T value) {
+    this.value = value;
+  }
+
+  public void setValue(T value) {
+    this.value = value;
+  }
+
+  public static void main(String[] args) {
+    NumberPrinter<Long> longPrinter = new NumberPrinter<>();
+    NumberPrinter<Short> shortPrinter = new NumberPrinter<>();
+  }
 }

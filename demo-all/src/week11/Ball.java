@@ -26,8 +26,13 @@ public class Ball implements Comparable<Ball>{
   public int compareTo(Ball ball) {
     // -1 or 1
     // this (-1) vs ball (1)
-    if (this.color == ball.getColor())
-      return 1;
+    if (this.color == ball.getColor()) {
+      if (this.size > ball.getSize()) {
+        return -1;
+      } else {
+        return 1;
+      }
+    }
     if (this.color == Color.BLUE)
       return -1;
     if (ball.getColor() == Color.BLUE)
@@ -43,6 +48,7 @@ public class Ball implements Comparable<Ball>{
   public String toString() {
     return "Ball[" //
         + "color=" + this.color.name() //
+        + ",size=" + this.size //
         + "]";
   }
 
@@ -52,17 +58,23 @@ public class Ball implements Comparable<Ball>{
     balls.add(new Ball(Color.RED, 7.9));
     balls.add(new Ball(Color.BLUE, 9.9));
     balls.add(new Ball(Color.RED, 10.0));
+
+    // Comparable
     Collections.sort(balls);
-    System.out.println(balls); // [Ball[color=BLUE], Ball[color=RED], Ball[color=RED], Ball[color=WHITE]]
+    System.out.println(balls);
+    // [Ball[color=BLUE,size=9.9], Ball[color=RED,size=10.0],
+    // Ball[color=RED,size=7.9], Ball[color=WHITE,size=10.3]]
 
     // Comparator
     Collections.sort(balls, new OrderByColor());
     System.out.println(balls);
+    // [Ball[color=RED,size=7.9], Ball[color=RED,size=10.0],
+    // Ball[color=WHITE,size=10.3], Ball[color=BLUE,size=9.9]]
 
-    // Comparator
     Collections.sort(balls, new OrderBySize());
     System.out.println(balls);
-    
+    // [Ball[color=WHITE,size=10.3], Ball[color=RED,size=10.0],
+    // Ball[color=BLUE,size=9.9], Ball[color=RED,size=7.9]]
   }
 
 }
